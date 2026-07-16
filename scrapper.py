@@ -39,5 +39,5 @@ def fetch_apt_trade(LAWD_CD, DEAL_YMD):
         results.append(row)
 
         results.sort(key=lambda x: (int(x.get("dealYear", 0)), int(x.get("dealMonth", 0)), int(x.get("dealDay", 0))))
-
+          # 결과값 sort, 람다값을 입력해 정렬
     return results
